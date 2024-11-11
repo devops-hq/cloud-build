@@ -1,0 +1,14 @@
+steps:
+  - name: ubuntu
+    args:
+      - /bin/bash
+      - '-c'
+      - |
+        echo "Hello, world!"
+        sleep 25  # Sleep for 5 minutes (300 seconds)
+        echo "execution completed!"
+timeout: 30s
+options:
+  logging: CLOUD_LOGGING_ONLY
+  pool:
+    name: projects/devops-hq/locations/us-central1/workerPools/cloud-build-private
