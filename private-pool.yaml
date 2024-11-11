@@ -4,8 +4,8 @@ steps:
       - /bin/bash
       - '-c'
       - |
-        echo "Hello, world!"
-        sleep 25  # Sleep for 5 minutes (300 seconds)
+        echo "Welcome to DevOps HQ from private worker pool!"
+        sleep 20  # Sleep for 20 minutes (20 seconds)
         echo "execution completed!"
 timeout: 30s
 options:
